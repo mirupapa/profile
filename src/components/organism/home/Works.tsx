@@ -15,7 +15,14 @@ const Contents = styled.div`
   justify-content: space-between;
 `
 
-const loadingData = [
+type Data = {
+  imgPath: string
+  imgAlt: string
+  mainTitle: string
+  subTitle: string
+}
+
+const loadingData: Data[] = [
   {
     imgPath: '/mydiary.png',
     imgAlt: 'myDiary',
