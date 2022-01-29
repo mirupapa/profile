@@ -1,6 +1,7 @@
 import Label from 'components/atom/Label'
 import Education from 'components/molecule/home/topics/Education'
 import Experience from 'components/molecule/home/topics/Experience'
+import Skill from 'components/molecule/home/topics/Skill'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -26,9 +27,7 @@ const Topics: React.FC = () => {
       <Contents>
         <Experience />
         <Education />
-        <Card>
-          <Label title="SKILL" iconType="human" />
-        </Card>
+        <Skill />
         <Card>
           <Label title="PERSONAL QUALITIES" iconType="human" />
         </Card>
