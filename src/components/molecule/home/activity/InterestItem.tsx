@@ -1,11 +1,10 @@
-import Card from 'components/atom/Card'
 import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
 import { InterestData } from './Interest'
 
 const Wrapper = styled.div`
-  padding: 15px;
+  padding-top: 15px;
 `
 const ImageWrap = styled.div`
   margin-left: auto;
@@ -33,7 +32,6 @@ const Tag = styled.div`
 `
 const Detail = styled.div`
   text-align: center;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
@@ -41,24 +39,22 @@ const Detail = styled.div`
 
 const InterestItem = (props: InterestData) => {
   return (
-    <Card>
-      <Wrapper>
-        <ImageWrap>
-          <Image
-            src={props.imgSrc}
-            layout="fixed"
-            width={128}
-            height={128}
-            alt={props.title}
-          />
-        </ImageWrap>
-        <Title>{props.title}</Title>
-        <Tag>{props.tag}</Tag>
-        {props.details.map((detail, index) => (
-          <Detail key={index}>{detail}</Detail>
-        ))}
-      </Wrapper>
-    </Card>
+    <Wrapper>
+      <ImageWrap>
+        <Image
+          src={props.imgSrc}
+          layout="fixed"
+          width={128}
+          height={128}
+          alt={props.title}
+        />
+      </ImageWrap>
+      <Title>{props.title}</Title>
+      <Tag>{props.tag}</Tag>
+      {props.details.map((detail, index) => (
+        <Detail key={index}>{detail}</Detail>
+      ))}
+    </Wrapper>
   )
 }
 

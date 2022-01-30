@@ -14,6 +14,9 @@ const Contents = styled.div`
   margin: 0 auto;
   justify-content: space-between;
 `
+const Anchor = styled.a`
+  cursor: pointer;
+`
 
 type Data = {
   imgPath: string
@@ -51,14 +54,14 @@ const Works: React.FC = () => {
         {loadingData.map((data) => {
           return (
             <Link href={`/works/${data.mainTitle}`} key={data.mainTitle}>
-              <a>
+              <Anchor>
                 <Work
                   imgPath={data.imgPath}
                   imgAlt={data.imgAlt}
                   mainTitle={data.mainTitle}
                   subTitle={data.subTitle}
                 />
-              </a>
+              </Anchor>
             </Link>
           )
         })}
