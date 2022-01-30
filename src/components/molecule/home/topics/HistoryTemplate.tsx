@@ -31,7 +31,7 @@ const Bold = styled.p`
   font-size: 16px;
   line-height: 28px;
 `
-const Remark = styled.p`
+const Remark = styled.div`
   color: #514141;
   font-weight: 400;
   font-size: 14px;

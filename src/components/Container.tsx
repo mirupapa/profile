@@ -1,6 +1,7 @@
-import Footer from "components/Footer"
-import Head from "next/head"
-import React from "react"
+import Footer from 'components/Footer'
+import Head from 'next/head'
+import React from 'react'
+import TopScrollButton from './TopScrollButton'
 
 type Props = {
   title: string
@@ -16,7 +17,7 @@ const Container: React.FC<Props> = ({ title, children }) => {
       </Head>
 
       <main>{children}</main>
-
+      <TopScrollButton />
       <Footer />
     </div>
   )

@@ -30,6 +30,7 @@ const data: InterestData[] = [
 const Wrapper = styled.div`
   padding-left: 30px;
   display: flex;
+  gap: 29px;
 `
 
 const Interest = () => {
