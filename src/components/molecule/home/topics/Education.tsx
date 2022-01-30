@@ -1,6 +1,6 @@
+import Card from 'components/atom/Card'
 import Label from 'components/atom/Label'
 import React from 'react'
-import styled from 'styled-components'
 import HistoryTemplate, { HistoryType } from './HistoryTemplate'
 
 const loadingData: HistoryType[] = [
@@ -17,13 +17,6 @@ const loadingData: HistoryType[] = [
     team: 'ヒューマンアカデミー',
   },
 ]
-
-const Card = styled.div`
-  width: 48%;
-  @media (max-width: 894px) {
-    width: 95%;
-  }
-`
 
 const Education = () => {
   return (

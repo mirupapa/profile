@@ -5,13 +5,8 @@ import styled from 'styled-components'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import Point from './Point'
+import Card from 'components/atom/Card'
 
-const Card = styled.div`
-  width: 48%;
-  @media (max-width: 894px) {
-    width: 95%;
-  }
-`
 const Error = styled.div`
   font-weight: bold;
   color: red;
@@ -27,15 +22,11 @@ const Row = styled.div`
 `
 const Name = styled.div`
   width: 170px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 28px;
 `
 const Remark = styled.div`
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 28px;

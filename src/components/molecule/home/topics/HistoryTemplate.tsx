@@ -27,16 +27,12 @@ const RowRight = styled.div`
 
 const Bold = styled.p`
   color: #514141;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 28px;
 `
 const Remark = styled.p`
   color: #514141;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;

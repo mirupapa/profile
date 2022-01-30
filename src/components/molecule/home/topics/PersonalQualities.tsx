@@ -1,3 +1,4 @@
+import Card from 'components/atom/Card'
 import Label from 'components/atom/Label'
 import React from 'react'
 import styled from 'styled-components'
@@ -10,13 +11,6 @@ const loadingData: HistoryType[] = [
     remark: 'とりあえず試してみる。新しいものが大好きです。',
   },
 ]
-
-const Card = styled.div`
-  width: 48%;
-  @media (max-width: 894px) {
-    width: 95%;
-  }
-`
 const Charts = styled.div`
   display: flex;
   padding-left: 30px;
