@@ -39,7 +39,7 @@ const Remark = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 28px;
 `
 
 const HistoryTemplate: React.FC<{ histories: HistoryType[] }> = ({

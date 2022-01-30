@@ -1,6 +1,6 @@
-import Label from 'components/atom/Label'
 import Education from 'components/molecule/home/topics/Education'
 import Experience from 'components/molecule/home/topics/Experience'
+import PersonalQualities from 'components/molecule/home/topics/PersonalQualities'
 import Skill from 'components/molecule/home/topics/Skill'
 import React from 'react'
 import styled from 'styled-components'
@@ -14,12 +14,6 @@ const Contents = styled.div`
   flex-wrap: wrap;
   gap: 10px 20px;
 `
-const Card = styled.div`
-  width: 48%;
-  @media (max-width: 894px) {
-    width: 95%;
-  }
-`
 
 const Topics: React.FC = () => {
   return (
@@ -28,9 +22,7 @@ const Topics: React.FC = () => {
         <Experience />
         <Education />
         <Skill />
-        <Card>
-          <Label title="PERSONAL QUALITIES" iconType="human" />
-        </Card>
+        <PersonalQualities />
       </Contents>
     </Wrapper>
   )
