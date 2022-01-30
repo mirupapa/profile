@@ -11,8 +11,6 @@ const ImageWrapper = styled.div`
   width: 30px;
 `
 const Title = styled.div`
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 17px;

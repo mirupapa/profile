@@ -85,7 +85,7 @@ const renderActiveShape = (props: {
         style={{ filter: 'drop-shadow(3px 3px 5px #ccc' }}
       />
       {/* 文字数問題あり */}
-      <text x={ttsx} y={ttsy} fill="white">
+      <text x={ttsx} y={ttsy} fill="white" fontSize={14}>
         {`${payload.name} ${payload.value}%`}
       </text>
       <polygon
